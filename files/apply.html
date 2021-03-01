@@ -1,43 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="files/css/apply.css" />
+    <title>
+      Apply & Enroll | Nursery School | Washington University in St. Louis
+    </title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" type="text/css" href="files/css/about.css" />
-  <title>About | Nursery School | Washington University in St. Louis</title>
-</head>
+  <body>
+    <ts-load data-name="header"></ts-load>
 
-<body>
-  <ts-load data-name="header"></ts-load>
+    <img
+      src="https://nurseryschool.wustl.edu/files/2015/03/group-holi.jpg"
+      alt=""
+      width="100%"
+    />
+    <div id="page-content">
+      <main>
+        <h1>Application Procedure</h1>
+        <h2></h2>
+        <p>
+          Interested in the nursery school? Here is information on how to apply and what to do once accepted, as well as procedures for re-enrollment.
+        </p>
+        <p>
+          If you are looking to enroll in Bear Tracks, please navigate to the Bear Tracks page under "Classrooms".
+        </p>
 
-  <img src="https://nurseryschool.wustl.edu/files/2015/03/group-holi.jpg" alt="" width="100%" />
-  <div id="page-content">
-    <main>
-      <h1>Application Procedure</h1>
-      <h2>
-        Parents interested in Washington University Nursery School should
-        contact the school to schedule a visit.
-      </h2>
-      <p>
-        An application fee of $40 is required when applying to the nursery
-        school. After this is received, your child is placed on an enrollment
-        list. You will be notified of acceptance in the March preceding the
-        fall enrollment date. Upon acceptance, a nonrefundable deposit of one
-        month’s tuition is due. This will be applied to tuition for the
-        following May.
-      </p>
-      <p>
-        You may fill out an Application for Admission online. You may also
-        print out and return the pdf version:
-        <a class="download" href="downloads/application.pdf" target="_blank">Application for Admission WUNS</a>
-      </p>
-    </main>
-  </div>
-  <ts-load data-name="footer"></ts-load>
-  <script src="scripts/js/app.js"></script>
-</body>
+        <br />
 
+        <!-- from home page -->
+
+        <div id="column-view">
+          <div class="column" id="left-column">
+            <header class="column-header" id="left-header">
+              <h3>Applying Students</h3>
+            </header>
+            <div class="inner-div">
+              <h2>1. Visit</h2>
+              <p>
+                Parents interested in Washington University Nursery School
+                should contact the school to schedule a visit. (Contact info is
+                available at the bottom of the site.)
+              </p>
+              <br />
+              <h2>2. Submit Application</h2>
+              <p>
+                Complete the Application for Admission form, which is available
+                to fill out online or can be printed and returned to the school
+                as a PDF.
+              </p>
+              <a href="files/application.html"
+                >Application for Admission (Online)</a
+              >
+              <a
+                class="download"
+                href="downloads/application.pdf"
+                target="_blank"
+                >Application for Admission (PDF)</a
+              >
+              <p>
+                A $40 application fee must be submitted along with your
+                application for admission.
+              </p>
+              <br />
+              <h2>3. Enrollment Notification</h2>
+              <p>
+                After your form and fee are received, your child is placed on an
+                enrollment list. You will be notified of acceptance in the March
+                preceding the fall enrollment date. Upon acceptance, a
+                nonrefundable deposit of one month’s tuition is due ($500/mo for half-day sessions, $1105/mo for full-day sessions). This will
+                be applied to tuition for the following May.
+              </p>
+              <br />
+              <h2>4. Enrollment Forms</h2>
+              <p>
+                Once notified of enrollment, complete the Developmental History
+                Form below:
+              </p>
+              <a href="files/developmental"
+                >Developmental History Form (Online)</a
+              >
+              <p>
+                Also complete the Enrollment Form, Medical Examination Report,
+                and Immunizations Form (these need to be completed each year):
+              </p>
+              <a href="files/enroll.html">Enrollment Form (Online)</a>
+              <a
+                class="download"
+                href="downloads/examination_report.pdf"
+                target="_blank"
+                >Child Medical Examination Report (PDF Only)</a
+              >
+              <a
+                class="download"
+                href="downloads/immunization_history.pdf"
+                target="_blank"
+                >Immunization Consent/History (PDF Only)</a
+              >
+              <br />
+              <h2>5. Orientation</h2>
+              <p>
+                This	visiting	day	is	usually	the	day	after	Labor	Day	and	gives	the	child	and	parent(s) an	
+opportunity	to	visit	the	classroom	and	meet	the	teachers	and	classmates.		This	visit	is	one	
+hour.		It	will	allow	time	for	the	child	to	enjoy	free	play	and	also	gives	parent(s) a	brief	
+overview	of what	to	expect	during	the	school	year.
+The	next	day, a	child	will	attend school on	his/her own	(either	Wednesday	or	Thursday,	see	
+orientation	schedule).		The	class	is	divided	in	half,	attending	on	either	Wednesday or	
+Thursday.		This	schedule	allows	the	children	and	teachers	to	interact	with	a	small	group	
+before the	entire	class	attends	on	Friday.
+              </p>
+            </div>
+          </div>
+
+          <!-- 
+            returning students
+           -->
+          <div class="column" id="right-column">
+            <header class="column-header" id="right-header">
+              <h3>Returning Students</h3>
+            </header>
+            <div class="inner-div">
+              Please complete the Enrollment Form, Medical Examination Report,
+                and Immunizations Form every school year before your child returns:
+              </p>
+              <a href="files/enroll.html">Enrollment Form (Online)</a>
+              <a
+                class="download"
+                href="downloads/examination_report.pdf"
+                target="_blank"
+                >Child Medical Examination Report (PDF Only)</a
+              >
+              <a
+                class="download"
+                href="downloads/immunization_history.pdf"
+                target="_blank"
+                >Immunization Consent/History (PDF Only)</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <ts-load data-name="footer"></ts-load>
+    <script src="scripts/js/app.js"></script>
+  </body>
 </html>

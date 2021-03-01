@@ -145,3 +145,10 @@ header a {
   top: 0;
   width: 100%;
 }
+
+.class-label {
+  margin-left: 10px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
