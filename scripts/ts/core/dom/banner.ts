@@ -10,6 +10,7 @@ export class TopBanner {
     D.display(Elements.ddUp, true);
     D.display(Elements.ddDown, false);
     D.display(Elements.ddContent, true);
+    D.display(Elements.ddText, true);
   }
 
   public static hide() {
@@ -17,6 +18,7 @@ export class TopBanner {
     D.display(Elements.ddDown, true);
     D.display(Elements.ddUp, false);
     D.display(Elements.ddContent, false);
+    D.display(Elements.ddText, true);
   }
 
   public static doDisplayChange() {
