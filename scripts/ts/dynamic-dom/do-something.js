@@ -13,13 +13,4 @@ export function doSomething() {
       container.classList.remove("sticky");
     }
   }
-  function pushDown() {
-    // console.log("sticky");
-    // if (window.pageYOffset > sticky) {
-    //   container.classList.add("sticky");
-    // } else {
-    //   container.classList.remove("sticky");
-    // }
-  }
 }
-˝
