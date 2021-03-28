@@ -9,6 +9,35 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
   // TODO: Put all operations that you want to happen on ever page load in this function.
   // For example you could write: Sticky.setup()
   doSomething();
+  // banner sticky stuff
+  const banner = document.querySelector("#mturk-top-banner-drop-down-column");
+  var header = document.getElementById("main-menu-container");
+  console.log(banner);
+  if (banner?.classList.contains("none")) {
+    header?.classList.remove("banner");
+  }
+
+  var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type == "attributes") {
+        if (header?.classList.contains("banner")) {
+          header.classList.remove("banner");
+          console.log("banner removed");
+        }
+
+        if (banner?.classList.contains("display")) {
+          header?.classList.add("banner");
+          console.log("banner added");
+        }
+      }
+    });
+  });
+  if (banner != null) {
+    observer.observe(banner, {
+      attributes: true,
+    });
+  }
+  // end of banner sticky stuff
 }
 
 export async function setupAll() {
@@ -26,7 +55,6 @@ itemsToCache.forEach((item: HTMLContent) => {
 (window as any).HTMLLoader = HTMLLoader;
 
 // sticky navbar
-
 
 console.log("dynamic-dom loaded");
 // Do not touch this line, needed to reinitialize code in the dynamic-dom.ts setupAll function
