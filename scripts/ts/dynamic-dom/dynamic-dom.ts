@@ -35,7 +35,7 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
   });
   if (banner != null) {
     observer.observe(banner, {
-      attributes: true,
+      attributes: true, //listen to attribute changes
     });
   }
   // end of banner sticky stuff
