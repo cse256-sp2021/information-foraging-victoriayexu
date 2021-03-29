@@ -9,8 +9,9 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
   // TODO: Put all operations that you want to happen on ever page load in this function.
   // For example you could write: Sticky.setup()
   doSomething();
+
   // banner sticky stuff
-  const banner = document.querySelector("#mturk-top-banner-drop-down-column");
+  const banner = document.querySelector("#mturk-top-banner-drop-down-content");
   var header = document.getElementById("main-menu-container");
   console.log(banner);
   if (banner?.classList.contains("none")) {
@@ -21,7 +22,7 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
     mutations.forEach(function (mutation) {
       if (mutation.type == "attributes") {
         if (header?.classList.contains("banner")) {
-          header.classList.remove("banner");
+          header?.classList.remove("banner");
           console.log("banner removed");
         }
 
