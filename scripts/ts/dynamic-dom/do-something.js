@@ -26,6 +26,8 @@ export function doSomething() {
 
   buttonHTML.appendChild(text);
 
+  // const grayBG = document.getElementById("mturk-top-banner-drop-down-content");
+
   // const button = document.getElementById("mturk-top-banner-arrow");
 
   // button.addEventListener("click", function () {
